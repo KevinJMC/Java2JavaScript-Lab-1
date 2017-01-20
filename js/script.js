@@ -79,8 +79,8 @@ function tableSquare(n) {
     display.innerHTML = "";
     var i, j;
     for (i = 1; i <= n; i++) {
-        for (j = i; j <= n*n; j++) {
-            display.innerHTML += j + " ";
+        for (j = 1; j <= n; j++) {
+            display.innerHTML += i * j + " " + "&nbsp;";
         }
         display.innerHTML += "<br />";
     }
