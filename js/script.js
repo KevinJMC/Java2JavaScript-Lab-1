@@ -49,20 +49,21 @@ function even(n) {
 function powers(n) {
     display.innerHTML = "";
     var i;
-    for (i = 2; i <= n; i++) {
+    for (i = 1; i <= n; i++) {
         display.innerHTML += Math.pow(2, i) + "<br />";
     }
 }
 
-//function areWeThereYet() {
-//    display.innerHTML = "";
-//    var i, input;
-//    do {
-//        display.innerHTML += "Are we there yet?" + "<br />" + "<input id=\"input\"/>";
-//        input = document.getElementById("input").value;
-//    } while (input.toLowerCase() !== "yes");
-//    display.innerHTML += "Good!";
-//}
+function areWeThereYet() {
+    display.innerHTML = "";
+    var i, input;
+    do {
+        display.innerHTML += "Are we there yet?" + "<br />";
+        input = prompt("Are we there yet?");
+        display.innerHTML += input + "<br />";
+    } while (input.toLowerCase() != "yes");
+    display.innerHTML += "Good!";
+}
 
 function triangle(n) {
     display.innerHTML = "";
